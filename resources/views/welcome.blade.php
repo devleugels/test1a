@@ -13,6 +13,16 @@
     welkom
 
     <x-test></x-test>
+    <hr />
+    <div x-data="{ show: false }">
+        <button @click="show = true; alert('dag allemaal');">Categorie</button>
+        
+        <div x-show="show">
+            <a href="#">een</a>
+            <a href="#">twee</a>
+            <a href="#">drie</a>
+        </div>
+    </div>
 
 
     <!-- include('welcome.home') -->
